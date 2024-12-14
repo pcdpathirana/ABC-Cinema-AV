@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+}
+
+header {
+    font-family: Arial;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.naviicon {
+    display: flex;
+    align-items: center;
+}
+
+.navilogin {
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.navbar {
+    font-family: Arial;
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+header .navbar a {
+    font-family: Arial;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #ff6f00;
+}
+
+.navilogin {
+    display: flex;
+    gap: 15px; 
+}
+
+.navilogin a {
+    font-family: Arial;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navilogin a:hover {
+    color: #ff6f00;
+}
+
+.login-body-div{
+    font-family: Arial;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    margin: 0;
+}
+
+
+.container {
+    width: 90%; /* Adjusts width for responsiveness */
+    max-width: 400px;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-container form{
+    display:grid;
+    margin:20px;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.input-group input,
+.btn {
+    width: 100%; /* Ensures consistent width for inputs and button */
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #2d3e50;
+    color: white;
+    margin-top: 12px;
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.input-group:focus {
+    border: .5px solid #ffc107; 
+    outline: none; 
+}
+
+.input-group input::placeholder {
+    color: #c0c0c0;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Optional to create spacing between the last input and the button */
+}
+
+.btn:hover {
+    background-color: #ff6f00;
+    color: white;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    color: #ff6f00;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .footer-links a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .newsletter {
+    margin-top: 20px;
+}
+
+footer .newsletter input {
+    padding: 5px;
+    width: 200px;
+}
+
+footer .newsletter button {
+    padding: 5px 10px;
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+footer .newsletter button:hover {
+    background-color: #e0a800;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+}
